@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RasoiMate – Smart Food. Zero Waste.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts & FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header & Hero -->
+  <header class="hero">
+    <nav>
+      <div class="logo">
+        <i class="fa-solid fa-bowl-food"></i> 
+        <span>RasoiMate</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#inventory">Inventory</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#donate">Donate</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Cook Smarter.<br>Waste Less.<br><span class="highlight">Share More.</span></h1>
+        <p class="subtitle">Track your kitchen, discover recipes, and donate surplus food—all in one intelligent platform.</p>
+        <div class="hero-buttons">
+          <a href="#features" class="cta-btn primary">
+            Get Started <i class="fa fa-arrow-right"></i>
+          </a>
+          <a href="#demo" class="cta-btn secondary">
+            <i class="fa fa-play"></i> Watch Demo
+          </a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="hero-image-container">
+          <img src="https://cdnl.iconscout.com/lottie/free/thumb/free-cooking-6834623-5605459.gif" alt="Chef cooking">
+          <div class="floating-elements">
+            <div class="float-element element-1"><i class="fa fa-leaf"></i></div>
+            <div class="float-element element-2"><i class="fa fa-heart"></i></div>
+            <div class="float-element element-3"><i class="fa fa-utensils"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- What We Do Section -->
+  <section id="what-we-do" class="section what-we-do-section">
+    <div class="section-header">
+      <h2><i class="fa-solid fa-lightbulb"></i> What We Do</h2>
+      <p class="section-description">RasoiMate is your smart kitchen companion, helping you track inventory, discover recipes, and donate surplus food to those in need.</p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="feature-card">
+      <div class="feature-icon-wrapper">
+        <i class="fa-solid fa-clipboard-list feature-icon"></i>
+      </div>
+      <h3>Inventory Tracking</h3>
+      <p>Smart expiry reminders and easy stock management for your kitchen.</p>
+      <div class="feature-hover-effect"></div>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon-wrapper">
+        <i class="fa-solid fa-utensils feature-icon"></i>
+      </div>
+      <h3>Smart Recipes</h3>
+      <p>Turn leftovers into delicious meals with creative, AI-powered suggestions.</p>
+      <div class="feature-hover-effect"></div>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon-wrapper">
+        <i class="fa-solid fa-heart feature-icon"></i>
+      </div>
+      <h3>Food Donation</h3>
+      <p>Donate surplus food to local shelters and make a real impact in your community.</p>
+      <div class="feature-hover-effect"></div>
+    </div>
+  </section>
+
+  <!-- Inventory Section -->
+  <section id="inventory" class="section inventory-section">
+    <div class="section-header">
+      <h2><i class="fa-solid fa-boxes-stacked"></i> Kitchen Inventory</h2>
+      <p class="section-description">Keep track of your ingredients with smart expiry alerts</p>
+    </div>
+    
+    <div class="inventory-grid">
+      <div class="inv-card fresh">
+        <div class="inv-card-image">
+          <img src="https://media.istockphoto.com/id/1443217097/vector/rice-character-rice-vector-on-white-background-rice-seed-rice-sack-vector-peasant-hat-vector.jpg?s=612x612&w=0&k=20&c=dWnr0dLhOkknxxQSJytXbm83X2P4Hzd_0Tqz_SbUA2E=" alt="Rice">
+        </div>
+        <div class="inv-card-content">
+          <h4>Rice</h4>
+          <p class="quantity">2 kg</p>
+          <p class="expiry">Expiry: <span>25 July 2025</span></p>
+          <span class="badge fresh"><i class="fa fa-leaf"></i> Fresh</span>
+        </div>
+        <div class="card-actions">
+          <button title="Edit" class="action-btn edit"><i class="fa fa-edit"></i></button>
+          <button title="Delete" class="action-btn delete"><i class="fa fa-trash"></i></button>
+        </div>
+      </div>
+
+      <div class="inv-card expiring">
+        <div class="inv-card-image">
+          <img src="https://media.istockphoto.com/id/1458434855/vector/bread-character-design-cute-funny-bread-toast-character-vector-flat-line-cartoon-kawaii.jpg?s=612x612&w=0&k=20&c=cZIiBbhlFNL9VrDNFqkXL4TCK7_ttFzkTW2G1ueTUH4=" alt="Bread">
+        </div>
+        <div class="inv-card-content">
+          <h4>Bread</h4>
+          <p class="quantity">6 slices</p>
+          <p class="expiry">Expiry: <span>10 July 2025</span></p>
+          <span class="badge warning"><i class="fa fa-hourglass-half"></i> Expiring Soon</span>
+        </div>
+        <div class="card-actions">
+          <button title="Edit" class="action-btn edit"><i class="fa fa-edit"></i></button>
+          <button title="Delete" class="action-btn delete"><i class="fa fa-trash"></i></button>
+        </div>
+      </div>
+
+      <div class="inv-card expired">
+        <div class="inv-card-image">
+          <img src="https://media.istockphoto.com/id/1219810849/vector/milk-vector-illustration.jpg?s=612x612&w=0&k=20&c=QMdR9pLzhaLAGXUyKIulKDNfb9tc6eOa82QBcvqpvQs=" alt="Milk">
+        </div>
+        <div class="inv-card-content">
+          <h4>Milk</h4>
+          <p class="quantity">1 L</p>
+          <p class="expiry">Expiry: <span>7 July 2025</span></p>
+          <span class="badge danger"><i class="fa fa-skull-crossbones"></i> Expired</span>
+        </div>
+        <div class="card-actions">
+          <button title="Edit" class="action-btn edit"><i class="fa fa-edit"></i></button>
+          <button title="Delete" class="action-btn delete"><i class="fa fa-trash"></i></button>
+        </div>
+      </div>
+
+      <div class="inv-card fresh">
+        <div class="inv-card-image">
+          <img src="https://media.istockphoto.com/id/1047203764/vector/vector-illustration-of-cute-tomato-character.jpg?s=2048x2048&w=is&k=20&c=vnuSnypqLBRvpegv0CQvpAAEpdyImwjGcQm6Rizjr2I=" alt="Tomato">
+        </div>
+        <div class="inv-card-content">
+          <h4>Tomato</h4>
+          <p class="quantity">5 pcs</p>
+          <p class="expiry">Expiry: <span>20 July 2025</span></p>
+          <span class="badge fresh"><i class="fa fa-leaf"></i> Fresh</span>
+        </div>
+        <div class="card-actions">
+          <button title="Edit" class="action-btn edit"><i class="fa fa-edit"></i></button>
+          <button title="Delete" class="action-btn delete"><i class="fa fa-trash"></i></button>
+        </div>
+      </div>
+
+      <div class="inv-card expiring">
+        <div class="inv-card-image">
+          <img src="https://media.istockphoto.com/id/1163395854/vector/cute-happy-smiling-cheese-character.jpg?s=612x612&w=0&k=20&c=rRirGn1-OHXIu50Ip68RGcjZcj9AnkEtXMhbY3hy8xY=" alt="Cheese">
+        </div>
+        <div class="inv-card-content">
+          <h4>Cheese</h4>
+          <p class="quantity">1 pack</p>
+          <p class="expiry">Expiry: <span>10 July 2025</span></p>
+          <span class="badge warning"><i class="fa fa-hourglass-half"></i> Expiring Soon</span>
+        </div>
+        <div class="card-actions">
+          <button title="Edit" class="action-btn edit"><i class="fa fa-edit"></i></button>
+          <button title="Delete" class="action-btn delete"><i class="fa fa-trash"></i></button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="add-product-section">
+      <button class="add-btn">
+        <i class="fa fa-plus"></i> Add Product
+      </button>
+    </div>
+  </section>
+
+  <!-- Smart Recipe Generator -->
+  <section id="recipes" class="section recipes-section">
+    <div class="section-header">
+      <h2><i class="fa-solid fa-utensils"></i> Smart Recipe Generator</h2>
+      <p class="section-description">Create amazing dishes from your available ingredients</p>
+    </div>
+    
+    <div class="ingredient-selector">
+      <div class="selector-header">
+        <span class="selector-title">Select Ingredients:</span>
+      </div>
+      <div class="ingredient-grid">
+        <label class="ingredient-item checked">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Rice</span>
+        </label>
+        <label class="ingredient-item checked">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Milk</span>
+        </label>
+        <label class="ingredient-item checked">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Bread</span>
+        </label>
+        <label class="ingredient-item checked">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Sugar</span>
+        </label>
+        <label class="ingredient-item checked">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Onion</span>
+        </label>
+        <label class="ingredient-item checked">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Tomato</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Capsicum</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Carrot</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Spring Onion</span>
+        </label>
+        <label class="ingredient-item checked">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Egg</span>
+        </label>
+        <label class="ingredient-item">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Cabbage</span>
+        </label>
+        <label class="ingredient-item checked">
+          <input type="checkbox" checked>
+          <span class="checkmark"></span>
+          <span class="ingredient-name">Coriander</span>
+        </label>
+      </div>
+      <button class="gen-recipe-btn">
+        <i class="fa fa-magic"></i> Generate Recipe
+      </button>
+    </div>
+    
+    <div class="recipe-grid" id="recipeCards">
+      <div class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://media.istockphoto.com/id/1687074826/vector/fried-rice-on-a-plate-with-chopsticks-traditional-asian-dish-vector-illustration.jpg?s=612x612&w=0&k=20&c=mbPhsBPQdfMrV1q1uANnSMkMH2zW83PqPixQagffKaM=" alt="Fried Rice">
+        </div>
+        <div class="recipe-content">
+          <h4>Veg Fried Rice</h4>
+          <div class="recipe-ingredients">
+            <h5>Ingredients:</h5>
+            <ul>
+              <li>Rice</li>
+              <li>Vegetables</li>
+              <li>Spices</li>
+            </ul>
+          </div>
+          <div class="recipe-steps">
+            <h5>Steps:</h5>
+            <ol>
+              <li>Sauté veggies.</li>
+              <li>Add rice & spices.</li>
+              <li>Mix well and serve.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://img.freepik.com/premium-vector/creamy-rice-pudding-dessert-cartoon-style_1253557-4972.jpg" alt="Bread Pudding">
+        </div>
+        <div class="recipe-content">
+          <h4>Bread Pudding</h4>
+          <div class="recipe-ingredients">
+            <h5>Ingredients:</h5>
+            <ul>
+              <li>Bread</li>
+              <li>Milk</li>
+              <li>Sugar</li>
+            </ul>
+          </div>
+          <div class="recipe-steps">
+            <h5>Steps:</h5>
+            <ol>
+              <li>Soak bread in milk.</li>
+              <li>Add sugar & bake.</li>
+              <li>Serve warm.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <section id="donate" class="section donate-section">
+    <div class="section-header">
+      <h2><i class="fa-solid fa-hands-holding-heart"></i> Donate Surplus Food</h2>
+      <p class="section-description">Make a difference in your community by sharing excess food</p>
+    </div>
+    
+    <div class="donate-grid">
+      <div class="donate-progress-card">
+        <h4>Monthly Impact</h4>
+        <div class="progress-stats">
+          <span class="progress-label">Meals Donated This Month</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%;"></div>
+          </div>
+          <div class="progress-numbers">
+            <span class="current">350</span>
+            <span class="separator">/</span>
+            <span class="target">500</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="donate-shelters-card">
+        <h4>Nearby Shelters</h4>
+        <ul class="shelters-list">
+          <li>
+            <i class="fa fa-map-marker-alt"></i>
+            <div class="shelter-info">
+              <span class="shelter-name">Hope Shelter</span>
+              <span class="shelter-distance">1.2 km away</span>
+            </div>
+          </li>
+          <li>
+            <i class="fa fa-map-marker-alt"></i>
+            <div class="shelter-info">
+              <span class="shelter-name">Food for All</span>
+              <span class="shelter-distance">2.5 km away</span>
+            </div>
+          </li>
+        </ul>
+        <button class="donate-btn">
+          <i class="fa fa-heart"></i> Donate Now
+        </button>
+      </div>
+      
+      <div class="donate-map-card">
+        <div class="map-container">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=77.5946%2C12.9716%2C77.5946%2C12.9716&amp;layer=mapnik"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <p class="donate-thank">Thank you for making a difference!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="footer-logo">
+          <i class="fa-solid fa-bowl-food"></i> RasoiMate
+        </span>
+        <span class="footer-year">&copy; 2025</span>
+      </div>
+      <div class="footer-social">
+        <span class="social-label">Follow us:</span>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-mission">
+        <span>Cook Smarter • Waste Less • Save More</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
