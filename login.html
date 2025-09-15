@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RasoiMate - Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2 id="form-title">Login</h2>
+
+    <input type="email" id="email" placeholder="Enter Email" required>
+    <input type="password" id="password" placeholder="Enter Password" required>
+
+    <button id="auth-btn" onclick="authenticate()">Login</button>
+    <p class="toggle-text">
+      Don't have an account? 
+      <span id="toggle-link" onclick="toggleForm()">Register</span>
+    </p>
+    <p id="message"></p>
+  </div>
+
+  <script src="main.js"></script>
+  
+</body>
+</html>
